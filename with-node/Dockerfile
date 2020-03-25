@@ -1,8 +1,8 @@
 FROM chinello/alpine-chrome
 
 USER root
-RUN apk add --no-cache tini make gcc g++ python git nodejs nodejs-npm yarn \
-    && rm -rf /var/lib/apt/lists/* \
+RUN apk add --no-cache tini@edge make@edge gcc@edge g++@edge python@edge git@edge nodejs@edge nodejs-npm@edge yarn@edge \
+	&& rm -rf /var/lib/apt/lists/* \
     /var/cache/apk/* \
     /usr/share/man \
     /tmp/*
